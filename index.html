@@ -10,6 +10,11 @@
         <h1>Magic Eight Ball</h1>
     </header>
     <section>
+        <label for="userQuestion">Ask me a question if you dare</label>
+<input type="text" id="userQuestion" userQuestion="" placeholder="">
+        <section>
+             
+        </section>
         <button onclick="window.location.reload()">Click Here!</button>
     </section>
     <div class='container'>
@@ -36,9 +41,17 @@
         }
         section {
             padding: 30px;
-            flex-direction: row;
+            flex-direction: column;
             text-align: center;
             background: pink;
+        }
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        input {
+            color: rgb(176, 119, 119);
+            font-family: 'Courier New', Courier, monospace;
         }
         button {
             height: 40px;
