@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Eight Ball</title>
+</head>
+<body>
+    <header>
+        <h1>Magic Eight Ball</h1>
+    </header>
+    <section>
+        <button onclick="window.location.reload()">Click Here!</button>
+    </section>
+    <div class='container'>
+        <a href='#'>
+        <img class='resize_fit_center'
+          src="https://upload.wikimedia.org/wikipedia/commons/9/90/Magic8ball.jpg" alt="Magic Eight Ball">     
+        </a>
+    </div>
+
+    <style>
+        body {
+            background: pink;
+        }
+        header {
+            padding: 30px;
+            flex-direction: row;
+            background-color: rgb(176, 119, 119);
+            border-color: black;
+            border-radius: 25px;
+            color: peru;
+            font-family: 'Courier New';
+            text-shadow: rgb(78, 43, 9) 0px 0px 10px;
+            text-align: center;
+        }
+        section {
+            padding: 30px;
+            flex-direction: row;
+            text-align: center;
+            background: pink;
+        }
+        button {
+            height: 40px;
+            width: 90px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            background-position: center;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 25%;
+            text-align: center;
+            box-shadow: white 0px 0px 20px;
+        } 
+        footer {
+            padding: 30px;
+            text-align: center;
+            text-shadow: gray 0px 0px 10px;
+            font-family: 'Courier New';
+        }
+    </style>
+    <script>      
+let userName = '';
+userName ? console.log(`Hello, ${userName}`) : console.log('Hello!');
+const userQuestion = '';
+console.log(`${userName} has asked ${userQuestion}.`)
+let randomNumber = Math.floor(Math.random() * 8);
+console.log(`${randomNumber}`)
+let eightBall = '';
+switch(randomNumber) {
+  case 0:
+  eightBall = 'it is unclear, try again';
+  break;
+  case 1:
+  eightBall = 'me think so? yes. just do it.';
+  break;
+  case 2:
+  eightBall = 'no way buddy.';
+  break;
+  case 3:
+  eightBall = 'it is certainly certain.';
+  break;
+  case 4:
+  eightBall = 'booooooooo. no.';
+  break;
+  case 5:
+  eightBall = 'it\'s not looking good for you mate.';
+  break;
+  case 6:
+  eightBall = 'plan B is reccommended.';
+  break;
+  case 7:
+  eightBall = 'my sources say potentially.';
+  break;
+  case 8:
+  eightBall = 'hunnid percent';
+  break;
+}
+
+alert(`The Magic Eight Ball says ${eightBall}`);
+    </script>
+<footer>
+    <p>Courtesy of Kendra Dias</p>
+</footer>
+</body>
+</html>
